@@ -11,4 +11,18 @@ public class Entreprise {
 		listeEmp = new ArrayList<Employe>();
 	}
 	
+	public void addEmploye(Employe E) {
+		this.listeEmp.add(E);
+	}
+	
+	public double calculSommeSalaires() {
+		double Somme;
+		Somme=0;
+		
+		for(Employe E: listeEmp) {
+			Somme= Somme+E.calculSalaire();
+		}
+		return Somme;
+	}
+	
 }
