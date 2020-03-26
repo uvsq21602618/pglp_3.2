@@ -3,9 +3,15 @@ package fr.uvsq.uvsq21602618.Pglp_3_2;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
-
+/**
+ * Classe contenant les tests de la classe Entreprise.
+ * @author Nathalie
+ *
+ */
 public class TestEntreprise {
-
+    /**
+     * Test de la méthode CalculSommeSalaires.
+     */
 	@Test
 	public void testCalculSommeSalaires() {
 		Entreprise E=new Entreprise();

@@ -3,9 +3,15 @@ package fr.uvsq.uvsq21602618.Pglp_3_2;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
-
+/**
+ * Classe contenant les test de la classe Manager.
+ * @author natha
+ *
+ */
 public class TestManager {
-
+    /**
+     * Test de la méthode CalculSalaire de Manager.
+     */
 	@Test
 	public void CalculSalaireManagerTest() {
 		Manager M= new Manager("John SMITH",2015);
