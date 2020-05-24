@@ -14,9 +14,9 @@ public class TestVendeur {
      */
 	@Test
 	public void CalculSalaireVendeurTest() {
-		Vendeur V= new Vendeur("John SMITH",2015);
+		Vendeur V = new Vendeur("John SMITH",2015);
 		V.setCommission(150.5);
-		double expected=1750.5;
+		double expected = 1500 + 150.5 + 20 * 5;
 		assertEquals(expected,V.calculSalaire(),0);
 	}
 }

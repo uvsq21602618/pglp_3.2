@@ -16,7 +16,7 @@ public class TestManager {
 	public void CalculSalaireManagerTest() {
 		Manager M= new Manager("John SMITH",2015);
 		M.setNbSubalternes(2);
-		double expected=1800;
+		double expected = 1500 + 200 + 5 * 20;
 		assertEquals(expected,M.calculSalaire(),0);
 	}
 }

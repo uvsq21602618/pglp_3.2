@@ -16,7 +16,11 @@ public class Employe {
     /**
      * Le salaire de base de l'employé.
      */
-    public static final int SALAIRE = 1500 + 20;
+    public static final int SALAIRE = 1500;
+    /**
+     * Le bonus en fonction du nombre d'année.
+     */
+    public static final int BONUS = 20;
     /**
      * Constructeur d'Employe.
      * A la construction de l'employe, un nom et une année
@@ -35,7 +39,7 @@ public class Employe {
     public double calculSalaire() {
         Calendar c = Calendar.getInstance();
         int anneeCourante = c.get(Calendar.YEAR);
-        return SALAIRE * (anneeCourante - anneeArrivee);
+        return SALAIRE + BONUS * (anneeCourante - anneeArrivee);
     }
     /**
      * Méthode pour récupérer le nom de l'employé.

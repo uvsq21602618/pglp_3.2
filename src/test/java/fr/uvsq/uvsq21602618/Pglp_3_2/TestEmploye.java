@@ -13,8 +13,8 @@ public class TestEmploye {
      */
 	@Test
 	public void CalculSalaireEmployeTest() {
-		Employe E= new Employe("John SMITH",2015);
-		double expected=1600;
-		assert (E.calculSalaire()==expected);
+		Employe E = new Employe("John SMITH",2015);
+		double expected = 1500 + 20 * 5;
+		assertEquals(expected, E.calculSalaire(), 0);
 	}
 }
